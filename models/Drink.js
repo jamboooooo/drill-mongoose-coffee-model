@@ -1,13 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const drinkSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
     },
     price: {
         type: Number,
-        required: true
+        required: true,
     },
     avail: {
         type: Boolean,
@@ -15,17 +15,17 @@ const drinkSchema = new mongoose.Schema({
     },
     cofein: {
         type: Boolean,
-        required: true
+        required: true,
     },
     size: {
         type: Number,
         requred: true,
-        defoult: 40
+        defoult: 40,
     },
     describe: {
         type: String,
-        required: true
-    }
-})
+        required: true,
+    },
+});
 
-module.exports = mongoose.model('Drink', drinkSchema)
+module.exports = mongoose.model("Drink", drinkSchema);
