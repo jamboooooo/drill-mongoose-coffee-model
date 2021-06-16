@@ -7,7 +7,7 @@ const {
     postDrink,
     deleteDrink,
     patchDrink
-} = require('../controllers/drinks')
+} = require('../controllers/index')
 const router = Router();
 
 router.get("/drinks", getAllDrinks);
